@@ -1,7 +1,7 @@
 # AppiumTestAutomation
 - Proje Java yazılım geliştirme dili ile Page Object Model'e uygun olarak yazılmış test otomasyon senaryolarını içermektedir.
 - Appium frameworkü ile beraber JUnit, Gauge, Log4j, Gson teknolojileri kullanılarak yazılmıştır.
-* HookImp Class
+* * HookImp Class
 - Appium driverın ayağa kaldırıldığı, ios ve android capabilitylerin tanımlandığı, testin koşacağı urllerin verildiği, ayrıca istenirse uzak bir makinede testlerin koşabileceği şekilde bir hub url tanımlanmış ve hazırlanmıştır.
 - BeforeScenario ve AfterSccenario gibi TestNg ve JUnit anatasyonlarıyla senaryolardan ve steplerden önce ve sonra yapılmasını istediğimiz kuralları belirliyoruz. Bunlar driverın ayağa kalkması, gösterilecek loglar, driverin kapatılması gibi işler ve kurallardır.
 * - StepImp Class
