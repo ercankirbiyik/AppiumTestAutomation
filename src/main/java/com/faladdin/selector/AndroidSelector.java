@@ -1,6 +1,6 @@
-package com.testinium.selector;
+package com.faladdin.selector;
 
-import com.testinium.model.ElementInfo;
+import com.faladdin.model.ElementInfo;
 import org.openqa.selenium.By;
 
 public class AndroidSelector implements Selector {

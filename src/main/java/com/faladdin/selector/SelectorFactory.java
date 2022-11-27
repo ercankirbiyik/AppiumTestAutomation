@@ -1,4 +1,4 @@
-package com.testinium.selector;
+package com.faladdin.selector;
 
 public class SelectorFactory {
 

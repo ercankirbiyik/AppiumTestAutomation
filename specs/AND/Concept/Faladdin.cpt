@@ -1,0 +1,43 @@
+Created by Ercan Kirbiyik
+
+# Faladdin uygulamasina mail adresi giris yapilir
+* Elementine tıkla "kesfetButonu"
+* Elementine tıkla "profilButonu"
+* Elementine tıkla "emailIleDevamEtButonu"
+* "rcnkirbiyik@gmail.com" textini "emailTextboxi" elementine yaz
+* Elementine tıkla "emailAdresiniGonderButonu"
+* geri butonuna bas
+* Elementine tıkla "profilSecenegiKapamaButonu"
+
+# Altinimi kullan secenegi ile Niyetime Ic fal turu secilir
+* Elementine tıkla "niyetimeIcButonu"
+* Elementine tıkla "altinimiKullanButonu"
+
+# Niyetime Ic fal turu icin bilgiler doldurulur
+* "niyetimeIcKahveFaliDevamEtButonu" elementinin görünürlüğü kontrol edilir
+* Elementine tıkla "niyetimeIcKahveFaliDevamEtButonu"
+* "Ercan" textini "niyetimeIcKahveFaliIsimTextboxi" elementine yaz
+* Elementine tıkla "niyetimeIcKahveFaliDevamEtButonu"
+* Elementine tıkla "niyetimeIcKahveFaliCinsiyetSecenegi"
+* Elementine tıkla "niyetimeIcKahveFaliDevamEtButonu"
+* Elementine tıkla "niyetimeIcKahveFaliDogumTarihiSecenegi"
+* Elementine tıkla "niyetimeIcKahveFaliDogumTarihiOnaylaButonu"
+* Elementine tıkla "niyetimeIcKahveFaliDevamEtButonu"
+* Elementine tıkla "niyetimeIcKahveFaliCalismaDurumuSecenegi"
+* Elementine tıkla "niyetimeIcKahveFaliDevamEtButonu"
+* Elementine tıkla "niyetimeIcKahveFaliIliskiDurumuSecenegi"
+* Elementine tıkla "niyetimeIcKahveFaliDevamEtButonu"
+* Elementine tıkla "niyetimeIcKahveFaliKategoriSecenegi"
+* Elementine tıkla "niyetimeIcKahveFaliKategoriyiGonderButonu"
+
+# Niyetime ic fal turunun basariyla gonderildigi kontrol edilir
+* "niyetimeIcKahveFaliGondermeKontrolu" elementinin görünürlüğü kontrol edilir
+
+# Altinimi kullan secenegi ile Motivasyon fal turu secilir
+* Elementine tıkla "motivasyonFalTuru"
+* Elementine tıkla "altinimiKullanButonu"
+
+# Motivasyon fal turu secenegi secilir ve motivasyon yazisinin goruldugu kontrol edilir
+* Elementine tıkla "motivasyonTuruSecenekleri"
+* Elementine tıkla "motivasyonFalTuruDevaminiOkuButonu"
+* "motivasyonFalTuruMetinKontrolu" elementinin görünürlüğü kontrol edilir

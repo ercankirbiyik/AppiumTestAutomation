@@ -1,8 +1,8 @@
-package com.testinium;
+package com.faladdin;
 
-import com.testinium.selector.Selector;
-import com.testinium.selector.SelectorFactory;
-import com.testinium.selector.SelectorType;
+import com.faladdin.selector.Selector;
+import com.faladdin.selector.SelectorFactory;
+import com.faladdin.selector.SelectorType;
 import com.thoughtworks.gauge.AfterScenario;
 import com.thoughtworks.gauge.AfterStep;
 import com.thoughtworks.gauge.BeforeScenario;
@@ -45,7 +45,7 @@ public class HookImpl {
             logger.info(executionContext.getAllTags().toString());
 
             localUrl = new URL("http://127.0.0.1:4723/wd/hub");
-            hubUrl = new URL("http://hub.testinium.io/wd/hub");
+            hubUrl = new URL("http://hub.io/wd/hub");
 
             if (StringUtils.isEmpty(System.getenv("key"))) {
                 if (localAndroid) {
@@ -57,13 +57,13 @@ public class HookImpl {
                 }
             } else {
                 if (System.getenv("platform").equals("ANDROID")) {
-                    logger.info("Testiniumda Android ortamında test ayağa kalkacak");
+                    logger.info("Hub Android ortamında test ayağa kalkacak");
                     appiumDriver = new AndroidDriver(hubUrl, androidCapabilities(false));
 
                     localAndroid = true;
                 } else {
 
-                    logger.info("Testiniumda IOS ortamında test ayağa kalkacak");
+                    logger.info("Hub IOS ortamında test ayağa kalkacak");
                     appiumDriver = new IOSDriver(hubUrl, iosCapabilities(false));
                     localAndroid = false;
                 }
@@ -87,8 +87,8 @@ public class HookImpl {
         capabilities.setCapability(MobileCapabilityType.FULL_RESET, false);
         capabilities.setCapability("unicodeKeyboard", false);
         capabilities.setCapability("resetKeyboard", false);
-        capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.android.chrome");
-        capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.google.android.apps.chrome.Main");
+        capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.faladdin.app");
+        capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.faladdin.app.ui.launcher.LauncherActivity");
 
 
         if (isLocal) {
@@ -97,10 +97,10 @@ public class HookImpl {
             capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 300);
         } else {
             //capabilities.setCapability("key", System.getenv("key"));
-            capabilities.setCapability("testinium:takesScreenshot", true);
-            capabilities.setCapability("testinium:recordsVideo", true);
-            capabilities.setCapability("testinium:key", "mehmetaksahin:66e85f66c902b99253229b608203e5e2");
-            capabilities.setCapability("testinium:testID", System.getenv("testID"));
+            capabilities.setCapability("hub:takesScreenshot", true);
+            capabilities.setCapability("hub:recordsVideo", true);
+            capabilities.setCapability("hub:key", "ercankirbiyik:66e85f66c902b99253229b608203e");
+            capabilities.setCapability("hub:testID", System.getenv("testID"));
         }
         return capabilities;
     }
@@ -111,7 +111,7 @@ public class HookImpl {
         capabilities.setCapability(MobileCapabilityType.NO_RESET, true);
         capabilities.setCapability(MobileCapabilityType.FULL_RESET, false);
         capabilities
-                .setCapability("bundleId", "com.ozdilek.ozdilekteyim");
+                .setCapability("bundleId", "com.faladdin.app");
         if (!islocal) {
             capabilities.setCapability("key", System.getenv("key"));
             capabilities.setCapability("waitForAppScript", "$.delay(1000);");
@@ -144,6 +144,9 @@ public class HookImpl {
         }
 
         logger.info("*************************************************************************" + "\r\n");
+        logger.info("TEST BİTTİ" + "\r\n");
+        logger.info("*************************************************************************" + "\r\n");
+
     }
 
     @AfterStep

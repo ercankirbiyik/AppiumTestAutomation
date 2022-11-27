@@ -1,8 +1,8 @@
-package com.testinium.selector;
+package com.faladdin.selector;
 
-import com.testinium.helper.StoreHelper;
-import com.testinium.model.ElementInfo;
-import com.testinium.model.SelectorInfo;
+import com.faladdin.helper.StoreHelper;
+import com.faladdin.model.ElementInfo;
+import com.faladdin.model.SelectorInfo;
 import org.openqa.selenium.By;
 
 public interface Selector {
